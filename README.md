@@ -37,20 +37,21 @@ lab = Lab(lab_id)
 planned_expiration_time = datetime.today() + datetime.timedelta(days=2)
 
 data = {
-'id': '<yourLabID>',
-'planned_expiration_time': planned_expiration_time 
+    'id': '<yourLabID>',
+    'planned_expiration_time': planned_expiration_time 
 }
 
 lab = lab.patch(data)
 
 if lab.response.ok:  # i.e., 20x
-do_something()
+    do_something()
 else:
-do_something_else()
+    do_something_else()
 ```
 
-For more on engaging with the response object, see: 
-https://2.python-requests.org/en/master/api/#requests.Response
+For more on engaging with the `Lab.response` object, see: 
+https://2.python-requests.org/en/master/api/#requests.Response. It's 
+simply a copy of `request.Response`.
 
 
 ## TODO 
