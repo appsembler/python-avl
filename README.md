@@ -6,10 +6,13 @@ Python bindings for the Appsembler API.
 
 ## Install
 
-1. Clone this repo
-2. `git fetch; git checkout -b bdant/patch origin/bdant/patch`
-3. `pip install -r requirements_dev.txt`
-4 `make test`  # Run the tests
+- Clone this repo
+- Create a virtualenv, if that's how you normally manage your Python packages
+- `$ git fetch; git checkout -b bdant/patch origin/bdant/patch`
+- `$ pip install -r requirements_dev.txt`
+- `$ chmod 700 ./add2path.sh`
+- `$ ./add2path.sh`  # Add this repo to your Python path.
+- `$make test`  # Run the tests.
 
 ## Usage 
 
