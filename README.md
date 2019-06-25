@@ -9,6 +9,7 @@ Python bindings for the Appsembler API.
 1. Clone this repo
 2. `git fetch; git checkout -b bdant/patch origin/bdant/patch`
 3. `pip install -r requirements_dev.txt`
+4 `make test`  # Run the tests
 
 ## Usage 
 
