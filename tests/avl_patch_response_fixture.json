@@ -1,0 +1,12 @@
+{
+	"id": 38,
+	"owner_email": "brian@appsembler.com",
+	"planned_expiration_time": "2019-07-06T03:00:00-04:00",
+	"comment": "",
+	"http_content": "<p></p>",
+	"project_name": "isc/theia:74cb4ab",
+	"container_created": "2019-06-15T15:42:30.823730Z",
+	"container_name": "user___98358490",
+	"container_running": true,
+	"routes": ["https://3000-98358490.staging-avl.appsembler.com/"]
+}
