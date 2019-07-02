@@ -8,13 +8,33 @@ Python bindings for the Appsembler API.
 
 - Clone this repo
 - Create a virtualenv, if that's how you normally manage your Python packages
-- `$ git fetch; git checkout -b bdant/patch origin/bdant/patch`
-- `$ pip install -r requirements_dev.txt`
-- `$ chmod 700 ./add2path.sh`
-- `$ ./add2path.sh`  # Add this repo to your Python path.
-- `$make test`  # Run the tests.
 
-## Usage 
+## Option 1: Install via cloning the repo
+
+Fetch the repo and pip install the dependancies:
+
+```
+$ git fetch; git checkout -b bdant/patch origin/bdant/patch
+$ pip install -r requirements_dev.txt
+```
+
+You'll then need to add the the directory to your path. On \*nix environments,
+run the helper script included in this repo:
+
+```
+$ chmod 700 ./add2path.sh
+```
+
+## Option 2: Install with `pip`
+
+Install the package in editable mode, which will allow you to edit the code 
+while also treating it like an installed package:
+
+```
+pip install -e git+git@github.com:appsembler/python-avl@bdant/patch#egg=avl
+```
+
+## Configure the package for your domain
 
 Copy the env file:
 
@@ -29,19 +49,21 @@ AVL_DOMAIN='https://yourAVLDashboard.domain.com'
 AVL_API_TOKEN='yourToken'
 ```
 
+## Usage 
+
 Update the planned expiration time of a lab:
 
 
 ```
 from avl import Lab
-from datetime import datetime
+from datetime import datetime, timedelta
 
 lab = Lab(lab_id)
 
-planned_expiration_time = datetime.today() + datetime.timedelta(days=2)
+planned_expiration_time = datetime.today() + timedelta(days=2)
 
 data = {
-    'id': '<yourLabID>',
+    'pk': lab.pk,
     'planned_expiration_time': planned_expiration_time 
 }
 
