@@ -64,3 +64,4 @@ simply a copy of `request.Response`.
   * '/isc/dashboard/userprojectdeployments/' GET
   * '/isc/dashboard/userprojectdeployments/delete_user_deployments/' POST (should be patch?)
   * '/isc/newdeploy/' POST (with project Token)
+* Install the requirements upon `setup.py install`, etc.
