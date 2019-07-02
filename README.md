@@ -31,7 +31,7 @@ Install the package in editable mode, which will allow you to edit the code
 while also treating it like an installed package:
 
 ```
-pip install -e git+git@github.com:appsembler/python-avl@bdant/patch#egg=avl
+pip install -e git+git@github.com:appsembler/python-avl@bdant/patch#egg=avl .
 ```
 
 ## Configure the package for your domain
