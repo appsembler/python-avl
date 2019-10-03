@@ -23,7 +23,7 @@ class ResponseMock(object):
 
     def json(self):
         patch_fixture_filepath = Path('.') / 'tests' / 'avl_patch_response_fixture.json'  # noqa: E501
-        with open(patch_fixture_filepath, 'r+') as f:
+        with patch_fixture_filepath.open('r+') as f:
             return json.loads(f.read())
 
 
@@ -69,6 +69,6 @@ def test_patch_lab(response):
     assert lab.response.status_code == 200
 
     patch_fixture_filepath = Path('.') / 'tests' / 'avl_patch_response_fixture.json'  # noqa: E501
-    with open(patch_fixture_filepath, 'r+') as f:
+    with patch_fixture_filepath.open('r+') as f:
         assert lab.response.json()['planned_expiration_time'] == \
             json.loads(f.read())['planned_expiration_time']
