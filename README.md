@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/appsembler/python-avl.svg?branch=bdant%2Fpatch)](https://travis-ci.org/appsembler/python-avl)
+
 # Appsembler Virtual Labs API Bindings
 
 
