@@ -5,6 +5,9 @@
 
 Python bindings for the Appsembler API.
 
+## Supported Python versions
+
+- Python 3.5, 3.6
 
 ## Install
 
@@ -25,6 +28,7 @@ run the helper script included in this repo:
 
 ```
 $ chmod 700 ./add2path.sh
+$ ./add2path.sh
 ```
 
 ## Option 2: Install with `pip`
