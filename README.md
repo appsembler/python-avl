@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/appsembler/python-avl.svg?branch=bdant%2Fpatch)](https://travis-ci.org/appsembler/python-avl)
+[![Build Status](https://travis-ci.org/appsembler/python-avl.svg?branch=master)](https://travis-ci.org/appsembler/python-avl)
 
 # Appsembler Virtual Labs API Bindings
 
@@ -16,7 +16,6 @@ Python bindings for the Appsembler API.
 Fetch the repo and pip install the dependancies:
 
 ```
-$ git fetch; git checkout -b bdant/patch origin/bdant/patch
 $ pip install -r requirements_dev.txt
 ```
 
@@ -33,7 +32,7 @@ Install the package in editable mode, which will allow you to edit the code
 while also treating it like an installed package:
 
 ```
-pip install -e git+git@github.com:appsembler/python-avl@bdant/patch#egg=avl .
+pip install -e git+git@github.com:appsembler/python-avl@master#egg=avl .
 ```
 
 ## Configure the package for your domain
