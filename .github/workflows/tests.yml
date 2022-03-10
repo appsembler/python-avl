@@ -14,8 +14,10 @@ jobs:
         include:
           - python-version: 3.5
             tox-env: py35
-          - python-version: 3.6
+          - python-version: 3.8
             tox-env: flake8
+          - python-version: 3.8
+            tox-env: py38
           # - python-version: 3.6
           #   tox-env: py36
 
