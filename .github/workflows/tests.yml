@@ -15,7 +15,9 @@ jobs:
           - python-version: 3.5
             tox-env: py35
           - python-version: 3.6
-            tox-env: py36
+            tox-env: flake8
+          # - python-version: 3.6
+          #   tox-env: py36
 
     steps:
       - uses: actions/checkout@v2
