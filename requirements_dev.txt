@@ -1,4 +1,4 @@
-pip==19.2
+pip==21.1
 bumpversion==0.5.3
 Click==7.0
 wheel==0.32.1
